@@ -1,7 +1,6 @@
 import nltk
 from nltk.tokenize import word_tokenize
 import os
-import string
 
 
 nltk.download('punkt')
@@ -43,6 +42,9 @@ for docment_id, tokens in document_tokens:
             inverted_index[token] = set()
         inverted_index[token].add(docment_id)
 
+
+
+# Searching algos
 
 def search_and(terms):
     if not terms:
@@ -91,6 +93,8 @@ def search_and_not(include_terms, exclude_terms):
     return included_docs - excluded_docs
 
 
+
+# REPL for usage
 while True:
     query = input("Enter your search query (or type 'exit' to quit): ").strip()
     if query.lower() == 'exit':
@@ -119,7 +123,6 @@ while True:
             results = search_and(terms)
         elif operator == "or":
             results = search_or(terms)
-        # Implement your logic for NOT here, if applicable
         else:
             print("Unsupported operator or incorrect query format.")
             continue
