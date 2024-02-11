@@ -1,6 +1,7 @@
 # Dependencies
 1. nltk
 
+To install nltk `$ pip install nltk`
 ## Usage
 1. To startup enter: `$ python3 assignment.py`
 
