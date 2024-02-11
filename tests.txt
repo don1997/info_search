@@ -1,0 +1,27 @@
+Enter your search query (or type 'exit' to quit): educators
+Found documents: {'15.txt', '1.txt'}
+Enter your search query (or type 'exit' to quit): example
+Found documents: {'35.txt', '4.txt'}
+Enter your search query (or type 'exit' to quit): this
+Found documents: {'42.txt'}
+Enter your search query (or type 'exit' to quit): first-grade
+Found documents: {'15.txt'}
+Enter your search query (or type 'exit' to quit): and? educators first-grade
+Found documents: {'15.txt'}
+Enter your search query (or type 'exit' to quit): and? educators example
+Found documents: set()
+Enter your search query (or type 'exit' to quit): or? example      
+Found documents: {'35.txt', '4.txt'}
+Enter your search query (or type 'exit' to quit): or? example educators
+Found documents: {'35.txt', '4.txt', '15.txt', '1.txt'}
+Enter your search query (or type 'exit' to quit): educators ? employees
+Unsupported operator or incorrect query format.
+Enter your search query (or type 'exit' to quit): and_not> educators ? employees
+Unsupported operator or incorrect query format.
+Enter your search query (or type 'exit' to quit): and_not? educators ? employees
+Found documents: {'1.txt'}
+Enter your search query (or type 'exit' to quit):  
+
+
+
+

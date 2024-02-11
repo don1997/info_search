@@ -1,7 +1,7 @@
 import nltk
 from nltk.tokenize import word_tokenize
 import os
-
+import re
 
 nltk.download('punkt')
 
@@ -13,14 +13,11 @@ document_tokens = []
 
 # PREPROCESS
 
-# Prepprocess each doc one at a time
-def preprocess_texts(corpus_texts):
-    tokens = word_tokenize(corpus_texts)
-    
-    normalized_tokens = [token.lower() for token in tokens if token.isalpha()]
-    
-    return normalized_tokens
 
+def preprocess_texts(corpus_texts):
+    tokens = re.findall(r'\b[\w-]+\b', corpus_texts)
+    normalized_tokens = [token.lower() for token in tokens]
+    return normalized_tokens
 
 # Load and preprocess each document
 for filename in os.listdir(corpus):
@@ -131,3 +128,4 @@ while True:
         results = search_for_term(query)
 
     print("Found documents:", results)
+
