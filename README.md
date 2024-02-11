@@ -12,5 +12,5 @@
     * ex: or? the to
     2. The and_not operation requires another set of args after it.
     Enter the opertor with the ?. Then enter your terms to match and the terms to exclude with a ? in between them.
-    Syntax for and_not: and_not? 'terms to match' ? 'terms to exclude'
+    * Syntax for and_not: and_not? 'terms to match' ? 'terms to exclude'
     * ex: and_not? educators ? example
