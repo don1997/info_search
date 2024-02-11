@@ -111,7 +111,6 @@ while True:
             results = search_and_not(include_terms, exclude_terms)
         else:
             print("Invalid AND_NOT query format.")
-    # Handling AND, OR, NOT
     elif '?' in query:
         operator, terms_str = query.split('?', 1)  # Split only on the first '?'
         terms = terms_str.strip().split()
