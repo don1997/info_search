@@ -18,3 +18,13 @@ To install nltk `$ pip install nltk`
 
 ## Image example
 ![image](Screen.png)
+
+# TEST Cases
+* test token generation
+![image](test_tokes.png)
+* test index generation
+![image](test_index.png)
+* test and
+![image](test_and.png)
+* test or
+![image](test_or.png)

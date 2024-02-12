@@ -91,7 +91,6 @@ def search_and_not(include_terms, exclude_terms):
 
 
 
-# TEST Cases
 
 # REPL for usage
 while True:
@@ -121,6 +120,7 @@ while True:
             results = search_and(terms)
         elif operator == "or":
             results = search_or(terms)
+        # TEST CASES
         elif operator == "test_tokens":
             results = document_tokens[1:5]
         elif operator == "test_index":
