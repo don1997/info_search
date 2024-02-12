@@ -1,3 +1,9 @@
+# Name: Donald McLaughlin
+# Project 1 
+# Members
+```
+Jonathan Motley
+```
 # Dependencies
 1. nltk
 
