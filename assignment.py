@@ -91,6 +91,8 @@ def search_and_not(include_terms, exclude_terms):
 
 
 
+# TEST Cases
+
 # REPL for usage
 while True:
     query = input("Enter your search query (or type 'exit' to quit): ").strip()
@@ -119,6 +121,14 @@ while True:
             results = search_and(terms)
         elif operator == "or":
             results = search_or(terms)
+        elif operator == "test_tokens":
+            results = document_tokens[1:5]
+        elif operator == "test_index":
+            results = inverted_index
+        elif operator == "test_and":
+            results = search_and(["educators", "the"])
+        elif operator == "test_or":
+            results = search_or(["educators", "the"])
         else:
             print("Unsupported operator or incorrect query format.")
             continue
@@ -127,4 +137,7 @@ while True:
         results = search_for_term(query)
 
     print("Found documents:", results)
+
+
+
 
